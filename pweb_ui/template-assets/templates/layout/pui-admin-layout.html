@@ -78,20 +78,20 @@
                 <div class="col-lg-2">
                     <div class="navbar-vertical-content">
                         <ul class="navbar-nav flex-column mb-2">
-                            {% if auth.navigation %}
-                                {% for nav_item in auth.navigation %}
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ nav_item.url }}">
-                                            <div class="d-flex align-items-center">
-                                            <span class="nav-link-icon">
-                                               <i class="{{ nav_item.icon }}"></i>
-                                            </span>
-                                                <span class="nav-link-text ps-1">{{ nav_item.name }}</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            {% endif %}
+{#                            {% if auth.navigation %}#}
+{#                                {% for nav_item in auth.navigation %}#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ nav_item.url }}">#}
+{#                                            <div class="d-flex align-items-center">#}
+{#                                            <span class="nav-link-icon">#}
+{#                                               <i class="{{ nav_item.icon }}"></i>#}
+{#                                            </span>#}
+{#                                                <span class="nav-link-text ps-1">{{ nav_item.name }}</span>#}
+{#                                            </div>#}
+{#                                        </a>#}
+{#                                    </li>#}
+{#                                {% endfor %}#}
+{#                            {% endif %}#}
 
                             {% if enable_default_left_nav %}
                                 <li class="nav-item">
